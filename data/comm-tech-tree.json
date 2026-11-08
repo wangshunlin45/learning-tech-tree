@@ -1,0 +1,1136 @@
+{
+ "format": "learning-tech-tree/v1",
+ "id": "comm-tech-2603",
+ "title": "现代通信技术 · 学习科技树",
+ "subtitle": "通信 260304 · 课程 → 能力 → 岗位",
+ "description": "以本学期课表（电工技术、大学应用数学基础、数字通信原理、高职职业英语、思想道德与法治、大学生职业生涯规划、社交礼仪、军事理论、体育、大学心理健康教育）为骨架，向上接到通信专业的核心能力链，向下落到网优、传输、基站、装维四类岗位的真实动作。",
+ "version": "1.0",
+ "language": "zh-CN",
+ "searchPlaceholder": "搜索课程、技术或岗位…",
+ "education": {
+  "path": "现代通信技术（高职三年制）",
+  "duration": "3 年 / 6 学期",
+  "note": "阶段划分按学期推进；节点是能力验收而非学校考核口径，学分与毕业条件以培养方案为准。"
+ },
+ "stages": [
+  "大一上 · 筑基",
+  "大一下 · 电类入门",
+  "大二上 · 通信核心",
+  "大二下 · 网络与系统",
+  "大三上 · 工程实践",
+  "大三下 · 岗位对接"
+ ],
+ "branches": [
+  {
+   "id": "foundation",
+   "label": "数理与工具",
+   "en": "FOUNDATION",
+   "color": "#7fb0d8"
+  },
+  {
+   "id": "circuits",
+   "label": "电工电子",
+   "en": "CIRCUITS",
+   "color": "#e2b46a"
+  },
+  {
+   "id": "comm",
+   "label": "通信原理与信号",
+   "en": "SIGNALS",
+   "color": "#8fd0b8"
+  },
+  {
+   "id": "network",
+   "label": "网络与传输",
+   "en": "NETWORKS",
+   "color": "#9c9ad6"
+  },
+  {
+   "id": "practice",
+   "label": "工程实践与设备",
+   "en": "FIELDWORK",
+   "color": "#d98f8f"
+  },
+  {
+   "id": "career",
+   "label": "通用素养与就业",
+   "en": "CAREER",
+   "color": "#c9b27a"
+  },
+  {
+   "id": "capstone",
+   "label": "综合与认证",
+   "en": "CAPSTONE",
+   "color": "#e8a76a"
+  }
+ ],
+ "sources": [
+  {
+   "id": "mooc",
+   "title": "中国大学 MOOC",
+   "url": "https://www.icourse163.org/",
+   "scope": "通信原理、信号与系统、电子技术等系统课的公开课源，用于补齐课堂没讲透的部分"
+  },
+  {
+   "id": "bili",
+   "title": "B 站检索页",
+   "url": "https://search.bilibili.com/",
+   "scope": "实验演示、仪器操作、基站上站等过程性视频，不能替代动手"
+  },
+  {
+   "id": "huawei",
+   "title": "华为人才在线（认证大纲）",
+   "url": "https://e.huawei.com/cn/talent/",
+   "scope": "HCIA-Datacom / HCIA-5G 考试大纲与学习路径，岗位技能对齐的公开依据"
+  },
+  {
+   "id": "ict",
+   "title": "华为 ICT 学院",
+   "url": "https://e.huawei.com/cn/talent/ict-academy",
+   "scope": "院校合作课程与实验资源，校内若有合作可免费拿到实验手册"
+  },
+  {
+   "id": "wireshark",
+   "title": "Wireshark 官方文档",
+   "url": "https://www.wireshark.org/docs/",
+   "scope": "抓包过滤语法与协议字段解析，验证 TCP/IP 理解是否真实"
+  },
+  {
+   "id": "rfc",
+   "title": "IETF RFC 索引",
+   "url": "https://www.rfc-editor.org/",
+   "scope": "TCP/IP 系列原始规范（如 RFC 791/793），查协议细节的一手资料"
+  },
+  {
+   "id": "tgpp",
+   "title": "3GPP 规范库",
+   "url": "https://www.3gpp.org/",
+   "scope": "4G/5G 空口与核心网标准原文，做网优和基站方向时查参数含义"
+  },
+  {
+   "id": "py",
+   "title": "Python 中文文档",
+   "url": "https://docs.python.org/zh-cn/3/",
+   "scope": "仿真与数据处理脚本的语法与标准库参考"
+  },
+  {
+   "id": "gnuradio",
+   "title": "GNU Radio",
+   "url": "https://www.gnuradio.org/",
+   "scope": "软件无线电实验平台，用声卡/SDR 做调制解调的实景验证"
+  },
+  {
+   "id": "course",
+   "title": "校内课程资料（教材、实训指导书、教师讲义）",
+   "url": "",
+   "scope": "本校课堂教学与考核口径，非公开链接；以任课教师要求为准"
+  }
+ ],
+ "startId": "start",
+ "endId": "end",
+ "nodes": [
+  {
+   "id": "start",
+   "name": "起点：读懂专业与这张课表",
+   "branch": "foundation",
+   "stage": 0,
+   "kind": "milestone",
+   "prereqIds": [],
+   "relatedIds": [],
+   "description": "把本学期课表翻译成能力清单：哪门课给数学工具、哪门课给电路直觉、哪门课只给学分。先想清楚毕业想去哪个岗位（网络优化、传输维护、基站工程、装维、售前技术支持），后面每一格才有意义。",
+   "outcome": "写出一页《专业画像》：目标岗位 1 个、备选 1 个，列出对应招聘 JD 里的 5 条硬技能。",
+   "caution": "不要用“先把课上完再说”代替规划，高职三年很快，第二年就要选方向。",
+   "sourceIds": [
+    "course",
+    "huawei"
+   ]
+  },
+  {
+   "id": "math1",
+   "name": "应用数学①：函数·极限·导数",
+   "branch": "foundation",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "高职版高等数学的第一段：函数性质、极限、导数与简单应用。它是后面信号与系统、电磁场、通信原理里“变化率、频谱、衰减”这些词的语法基础。",
+   "outcome": "整理 20 道典型题的手写解题卡，能解释导数在“信号变化快慢”上的含义。",
+   "caution": "只背公式不画图，到了信号与系统会看不懂波形与频谱的对应关系。",
+   "sourceIds": [
+    "course",
+    "mooc"
+   ]
+  },
+  {
+   "id": "eng1",
+   "name": "职业英语①：技术词汇与科技阅读",
+   "branch": "career",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "围绕设备手册、datasheet、协议文档建立的英语能力。通信行业的一手资料几乎全是英文，HCIA/HCIP 题库也是英文术语。",
+   "outcome": "精读 3 页真实器件手册（如光模块或交换机接口说明），做出术语表 ≥40 条。",
+   "caution": "把英语当考试科目背单词，遇到英文手册仍然读不动。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "ideo",
+   "name": "思想道德与法治",
+   "branch": "career",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "思政必修课，考核以课堂参与、作业与期末为主，属于毕业学分刚性要求。",
+   "outcome": "按教学日历完成全部作业与考勤，期末不挂科。",
+   "caution": "拖到最后一周补作业，容易丢平时分。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "military",
+   "name": "军事理论",
+   "branch": "career",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "国防教育必修课，多数学校为线上慕课 + 线下考试，学分刚性但时间成本可控。",
+   "outcome": "完成线上课时与考试，拿到学分记录截图归档。",
+   "caution": "误以为可以最后刷完，线上课常有截止时间。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "pe1",
+   "name": "体育①：体能与运动习惯",
+   "branch": "career",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "体测与课堂出勤双考核。通信行业的上站、布线、拉缆都是体力活，体能不是选修。",
+   "outcome": "建立每周 2 次、每次 40 分钟的运动记录，体测项目全部达标。",
+   "caution": "只在体测前突击，容易受伤且成绩不稳。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "career",
+   "name": "大学生职业生涯规划",
+   "branch": "career",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "把“我是谁、能干什么、市场要什么”写成可执行的三年计划。这门课的产出直接决定你二年级选哪条技术线。",
+   "outcome": "产出一份含时间节点的三年规划表，并标注 3 个可验证的里程碑（证书/项目/实习）。",
+   "caution": "写成作文交上去就完事，后面没有任何一条被执行。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "etiquette",
+   "name": "社交礼仪",
+   "branch": "career",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "职场沟通、商务接待、电话与邮件礼仪。装维、售前、客户侧故障处理都靠这套软技能兜底。",
+   "outcome": "完成一次 3 分钟模拟客户沟通（含开场、复述需求、确认时间点），录下来自评。",
+   "caution": "把它当水课，面试时连自我介绍的结构都没有。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "psych",
+   "name": "大学心理健康教育",
+   "branch": "career",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "压力管理、情绪识别、人际边界。高职节奏是“课多 + 实训多 + 考证压力”，这门课给的是可持续学习的底盘。",
+   "outcome": "建立一份个人压力清单与 3 条应对策略，实践 4 周后记录变化。",
+   "caution": "直到崩了才想起来，平时完全不复盘情绪状态。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "notes",
+   "name": "学习方法：结构化笔记与复盘",
+   "branch": "foundation",
+   "stage": 0,
+   "kind": "optional",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [
+    "psych"
+   ],
+   "description": "把课堂、教材、视频三种输入合并成一套可检索的笔记体系（康奈尔笔记 / 双链笔记），并每周复盘一次。",
+   "outcome": "连续 4 周产出周复盘，能指出“哪一章其实没懂”。",
+   "caution": "收藏一堆资料却从不回看，笔记变成资料坟场。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "math2",
+   "name": "应用数学②：积分与微分方程入门",
+   "branch": "foundation",
+   "stage": 1,
+   "kind": "core",
+   "prereqIds": [
+    "math1"
+   ],
+   "relatedIds": [],
+   "description": "积分、常微分方程初步、级数概念。通信里的能量、功率、滤波、RC 充放电都落在这套工具上。",
+   "outcome": "能独立推导一阶 RC 电路的充放电表达式，并画出示意图。",
+   "caution": "只记积分表，不理解“积分=累积量”的物理含义。",
+   "sourceIds": [
+    "course",
+    "mooc"
+   ]
+  },
+  {
+   "id": "circuit",
+   "name": "电工技术：直流电路与基尔霍夫定律",
+   "branch": "circuits",
+   "stage": 1,
+   "kind": "core",
+   "prereqIds": [
+    "math1",
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "电路模型、欧姆定律、基尔霍夫两定律、叠加与戴维南等效。这是全部电类课的公共地基，也是电工证与实训的前提。",
+   "outcome": "独立完成 5 个直流电路计算 + 1 次万用表实测，计算值与实测值误差 <10%。",
+   "caution": "只会套公式不会看图，遇到实电路就分不清串并联。",
+   "sourceIds": [
+    "course",
+    "bili"
+   ]
+  },
+  {
+   "id": "ac",
+   "name": "正弦交流与三相电路",
+   "branch": "circuits",
+   "stage": 1,
+   "kind": "core",
+   "prereqIds": [
+    "circuit",
+    "math2"
+   ],
+   "relatedIds": [],
+   "description": "相量法、阻抗、功率因数、三相电与安全用电。机房供电、通信电源、UPS 都建立在这上面。",
+   "outcome": "用相量法算出一个 RL 串联电路的电流与功率因数，并用实验验证。",
+   "caution": "把交流当直流算，忽略相位差导致功率算错。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "safety",
+   "name": "电工实训与安全规范",
+   "branch": "circuits",
+   "stage": 1,
+   "kind": "core",
+   "prereqIds": [
+    "circuit"
+   ],
+   "relatedIds": [],
+   "description": "安全用电、接地与防雷、验电与挂牌、实训台操作规范。上站作业和机房施工的第一道门槛。",
+   "outcome": "通过校内电工实训考核，能口述“停电—验电—挂牌—接地”的顺序与原因。",
+   "caution": "觉得是形式主义，真实作业里这是保命流程。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "clang",
+   "name": "C 语言与嵌入式编程入门",
+   "branch": "foundation",
+   "stage": 1,
+   "kind": "core",
+   "prereqIds": [
+    "start",
+    "math1"
+   ],
+   "relatedIds": [],
+   "description": "变量、流程控制、函数、指针基础。单片机、通信设备命令行、后续 Python 都靠这套编程直觉迁移。",
+   "outcome": "写出 3 个可运行的小程序（串口打印、数组处理、简单状态机），并注释清楚。",
+   "caution": "只看视频不动手，指针一卡就放弃。",
+   "sourceIds": [
+    "course",
+    "bili"
+   ]
+  },
+  {
+   "id": "linux",
+   "name": "Linux 命令行与 Git 版本管理",
+   "branch": "foundation",
+   "stage": 1,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [],
+   "description": "文件与权限、进程、网络命令（ip/ss/ping/tcpdump）、文本处理，以及 Git 的基本提交与回滚。设备侧几乎都是 Linux。",
+   "outcome": "在一台虚拟机里完成“建用户、配静态 IP、抓 100 个包、用 Git 提交笔记”全流程。",
+   "caution": "只背命令不理解输出，排障时看不懂报错。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "eng2",
+   "name": "职业英语②：技术文档与邮件",
+   "branch": "career",
+   "stage": 1,
+   "kind": "core",
+   "prereqIds": [
+    "eng1"
+   ],
+   "relatedIds": [],
+   "description": "技术写作：故障报告、变更说明、客户邮件。工作中比口语更常用。",
+   "outcome": "用英文写一份 1 页故障处理报告（现象—定位—处理—验证）。",
+   "caution": "直接机翻，术语与句式不像工程文档。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "pe2",
+   "name": "体育②：专项技能与体测达标",
+   "branch": "career",
+   "stage": 1,
+   "kind": "core",
+   "prereqIds": [
+    "pe1"
+   ],
+   "relatedIds": [],
+   "description": "专项运动技能 + 国家学生体质健康标准测试。毕业学分与体测挂钩。",
+   "outcome": "体测全部项目达标并留档，专项课出勤满勤。",
+   "caution": "体测单项不及格会影响毕业资格审查。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "analog",
+   "name": "模拟电子：二极管·三极管·放大电路",
+   "branch": "circuits",
+   "stage": 2,
+   "kind": "core",
+   "prereqIds": [
+    "ac"
+   ],
+   "relatedIds": [],
+   "description": "PN 结、二极管应用、三极管工作区、共射/共集放大、反馈与运算放大器。射频前端与电源电路的入门语言。",
+   "outcome": "搭出单管共射放大电路，测出静态工作点与电压增益，与手算对比。",
+   "caution": "只记结论不做实验，波形失真了也不知道为什么。",
+   "sourceIds": [
+    "course",
+    "bili"
+   ]
+  },
+  {
+   "id": "digital",
+   "name": "数字电子：逻辑门·组合与时序电路",
+   "branch": "circuits",
+   "stage": 2,
+   "kind": "core",
+   "prereqIds": [
+    "ac"
+   ],
+   "relatedIds": [],
+   "description": "逻辑代数、组合逻辑设计、触发器、计数器、状态机。它是通信设备里“判决、同步、计数”的硬件基础。",
+   "outcome": "用 74 系列芯片或仿真软件实现一个 4 位计数器，并画出时序图。",
+   "caution": "跳过卡诺图直接抄答案，设计题一变形就不会。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "signal",
+   "name": "信号与系统：时域与频域",
+   "branch": "comm",
+   "stage": 2,
+   "kind": "core",
+   "prereqIds": [
+    "math2"
+   ],
+   "relatedIds": [
+    "math1"
+   ],
+   "description": "信号的分类、卷积、傅里叶级数与变换、系统响应。数字通信原理里“带宽、频谱、滤波”全部由这门课定义。",
+   "outcome": "对 3 种典型信号画出时域波形与频谱，并解释带宽与脉宽的关系。",
+   "caution": "把傅里叶当纯数学背，考试过但看不懂频谱仪。",
+   "sourceIds": [
+    "course",
+    "mooc"
+   ]
+  },
+  {
+   "id": "comm",
+   "name": "数字通信原理（本学期核心课）",
+   "branch": "comm",
+   "stage": 2,
+   "kind": "core",
+   "prereqIds": [
+    "signal",
+    "math2"
+   ],
+   "relatedIds": [
+    "digital"
+   ],
+   "description": "信源/信道编码、抽样量化、PCM、基带传输、误码率、复用与同步。它是整个专业的“主心骨”，也是网优与传输岗面试的必问内容。",
+   "outcome": "独立推导 PCM 编码过程，算出给定信噪比下的误码率量级，并用实验箱或仿真验证趋势。",
+   "caution": "只背框图名词，说不清“为什么这样编码”，面试一问就露。",
+   "sourceIds": [
+    "course",
+    "mooc",
+    "tgpp"
+   ]
+  },
+  {
+   "id": "modulate",
+   "name": "调制与编码：ASK/FSK/PSK 与信道编码",
+   "branch": "comm",
+   "stage": 2,
+   "kind": "core",
+   "prereqIds": [
+    "comm"
+   ],
+   "relatedIds": [
+    "signal"
+   ],
+   "description": "数字调制星座、频带传输、差错控制编码（汉明、卷积、LDPC 概念）。5G 空口的高阶调制就是它的延伸。",
+   "outcome": "用 GNU Radio 或 MATLAB 跑通 BPSK/QPSK 调制解调，输出星座图与误码率曲线。",
+   "caution": "只画星座图不动手，遇到真实信道损伤无法解释。",
+   "sourceIds": [
+    "gnuradio",
+    "course"
+   ]
+  },
+  {
+   "id": "mcu",
+   "name": "单片机原理与应用",
+   "branch": "circuits",
+   "stage": 2,
+   "kind": "core",
+   "prereqIds": [
+    "digital",
+    "clang"
+   ],
+   "relatedIds": [],
+   "description": "GPIO、定时器、串口、中断、AD 采样。设备监控、传感器采集、简易通信模块都从这里起步。",
+   "outcome": "用 STM32/51 完成“串口收发 + 定时采样 + 上位机显示”的小系统，代码放 Git。",
+   "caution": "只会点灯，串口通信与中断一上就乱。",
+   "sourceIds": [
+    "course",
+    "bili"
+   ]
+  },
+  {
+   "id": "hf",
+   "name": "高频电子线路",
+   "branch": "comm",
+   "stage": 2,
+   "kind": "optional",
+   "prereqIds": [
+    "analog",
+    "signal"
+   ],
+   "relatedIds": [],
+   "description": "谐振回路、高频小信号放大、混频、振荡器。射频与基站方向的知识前置。",
+   "outcome": "分析一个混频电路的频谱搬移过程，说明本振频率如何选择。",
+   "caution": "选课时跟风，实际没有射频方向打算会挤压核心课时间。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "em",
+   "name": "电磁场与电磁波初步",
+   "branch": "comm",
+   "stage": 2,
+   "kind": "optional",
+   "prereqIds": [
+    "math2"
+   ],
+   "relatedIds": [
+    "signal"
+   ],
+   "description": "电场磁场、麦克斯韦方程组的定性理解、传输线、天线增益与方向图概念。网优看覆盖、看天线倾角时会用到。",
+   "outcome": "解释天线增益、半功率波束宽度与覆盖半径的关系，并画出示意图。",
+   "caution": "把它当纯理论课，网优现场的参数就全靠背。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "network",
+   "name": "计算机网络与 TCP/IP",
+   "branch": "network",
+   "stage": 3,
+   "kind": "core",
+   "prereqIds": [
+    "linux"
+   ],
+   "relatedIds": [],
+   "description": "OSI 与 TCP/IP 分层、IP 编址与子网、ARP、TCP/UDP、DNS、HTTP。所有网络岗的第一门硬课。",
+   "outcome": "手算子网划分 10 道题全对；用抓包解释一次完整的 TCP 三次握手。",
+   "caution": "只会背分层名字，给一个 IP 段算不出可用地址。",
+   "sourceIds": [
+    "rfc",
+    "wireshark",
+    "course"
+   ]
+  },
+  {
+   "id": "routing",
+   "name": "路由与交换配置",
+   "branch": "network",
+   "stage": 3,
+   "kind": "core",
+   "prereqIds": [
+    "network"
+   ],
+   "relatedIds": [],
+   "description": "VLAN、静态路由、OSPF、ACL、NAT。这是 HCIA-Datacom 的主体内容，也是运维岗的日常。",
+   "outcome": "在 eNSP 或真实设备上搭 3 台设备的 OSPF 网络，实现互通并导出配置文件。",
+   "caution": "只敲命令不理解报文交互，排障只能重启。",
+   "sourceIds": [
+    "huawei",
+    "course"
+   ]
+  },
+  {
+   "id": "optical",
+   "name": "光纤通信与光传输",
+   "branch": "network",
+   "stage": 3,
+   "kind": "core",
+   "prereqIds": [
+    "comm"
+   ],
+   "relatedIds": [
+    "em"
+   ],
+   "description": "光纤结构、损耗与色散、SDH/OTN 概念、光模块与光功率预算。传输机房的核心知识。",
+   "outcome": "完成一次光功率预算计算（含接头与熔接损耗），并用光功率计实测一根跳线。",
+   "caution": "把光纤当“更快的网线”，不懂衰耗与色散会误判故障。",
+   "sourceIds": [
+    "course",
+    "bili"
+   ]
+  },
+  {
+   "id": "mobile",
+   "name": "移动通信：4G/5G 空口与组网",
+   "branch": "network",
+   "stage": 3,
+   "kind": "core",
+   "prereqIds": [
+    "comm",
+    "network"
+   ],
+   "relatedIds": [
+    "em"
+   ],
+   "description": "蜂窝概念、OFDM、MIMO、帧结构、小区与切换、SA/NSA 组网。网优与基站岗的主战场。",
+   "outcome": "画出 5G 一个时隙的帧结构，说明上下行配比与覆盖、容量的关系。",
+   "caution": "只记缩写，问“为什么用 OFDM”答不上来。",
+   "sourceIds": [
+    "tgpp",
+    "course"
+   ]
+  },
+  {
+   "id": "access",
+   "name": "接入网与综合布线",
+   "branch": "practice",
+   "stage": 3,
+   "kind": "core",
+   "prereqIds": [
+    "network",
+    "circuit"
+   ],
+   "relatedIds": [],
+   "description": "PON 架构、ONU/OLT、FTTH 场景，以及双绞线/光纤的施工规范与测试。装维与驻地网岗位的入门技能。",
+   "outcome": "完成一次 FTTH 入户链路设计与跳线制作，用测线仪与光功率计出具测试记录。",
+   "caution": "布线不讲规范，现场返工率极高。",
+   "sourceIds": [
+    "course",
+    "bili"
+   ]
+  },
+  {
+   "id": "power",
+   "name": "通信电源与机房环境",
+   "branch": "practice",
+   "stage": 3,
+   "kind": "core",
+   "prereqIds": [
+    "ac"
+   ],
+   "relatedIds": [],
+   "description": "开关电源、蓄电池、UPS、接地防雷、温湿度与消防。机房与基站“不断电”的底层保障。",
+   "outcome": "画出机房供电链路（市电—UPS—配电—设备），标出单点故障位置。",
+   "caution": "只关注设备不关注供电，故障定位方向会跑偏。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "dsp",
+   "name": "数字信号处理",
+   "branch": "comm",
+   "stage": 3,
+   "kind": "optional",
+   "prereqIds": [
+    "signal"
+   ],
+   "relatedIds": [
+    "math2"
+   ],
+   "description": "采样定理、DFT/FFT、数字滤波器设计、窗函数。想走研发或算法方向再加。",
+   "outcome": "用 Python 设计一个 FIR 低通滤波器，画出幅频响应并处理一段真实音频。",
+   "caution": "在没有信号与系统基础时硬上，容易全程听不懂。",
+   "sourceIds": [
+    "mooc",
+    "py"
+   ]
+  },
+  {
+   "id": "python",
+   "name": "Python 与通信仿真",
+   "branch": "foundation",
+   "stage": 3,
+   "kind": "optional",
+   "prereqIds": [
+    "linux",
+    "math2"
+   ],
+   "relatedIds": [
+    "clang"
+   ],
+   "description": "NumPy/Matplotlib 做信号与数据可视化，脚本化处理测试数据与日志。网优报表与自动化巡检的加速器。",
+   "outcome": "写一个脚本：读入路测 CSV，画出 RSRP 分布直方图并标注弱覆盖小区。",
+   "caution": "把它当第二门编程课从语法学起，迟迟做不出能用的工具。",
+   "sourceIds": [
+    "py",
+    "course"
+   ]
+  },
+  {
+   "id": "wireshark",
+   "name": "抓包与协议分析",
+   "branch": "network",
+   "stage": 3,
+   "kind": "core",
+   "prereqIds": [
+    "network"
+   ],
+   "relatedIds": [
+    "linux"
+   ],
+   "description": "抓包点选择、过滤表达式、TCP 重传与乱序识别、DNS/DHCP/HTTP 字段定位。排障的核心证据手段。",
+   "outcome": "对一个“网页慢”的场景抓包，用过滤与统计指出瓶颈在 DNS、握手还是重传。",
+   "caution": "抓到包不会过滤，几千条记录里找不到问题。",
+   "sourceIds": [
+    "wireshark",
+    "rfc"
+   ]
+  },
+  {
+   "id": "sec",
+   "name": "网络安全基础",
+   "branch": "network",
+   "stage": 3,
+   "kind": "optional",
+   "prereqIds": [
+    "network"
+   ],
+   "relatedIds": [
+    "linux"
+   ],
+   "description": "常见攻击面、访问控制、VPN、等保基本要求。政企项目里绕不开的合规知识。",
+   "outcome": "完成一次小型网络的访问控制设计（ACL + 账号权限），写出风险清单。",
+   "caution": "只记名词，配置时把 ACL 顺序写反导致全不通。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "survey",
+   "name": "通信工程勘察与设计",
+   "branch": "practice",
+   "stage": 4,
+   "kind": "core",
+   "prereqIds": [
+    "optical",
+    "access"
+   ],
+   "relatedIds": [
+    "power"
+   ],
+   "description": "站点勘察、机房平面、路由与管线、概预算与图纸。工程侧“从需求到图纸”的完整链条。",
+   "outcome": "为一个真实楼栋出一套勘察记录 + 布线平面图 + 材料清单。",
+   "caution": "只画图不算量，材料清单与现场对不上。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "bts",
+   "name": "基站建设与维护",
+   "branch": "practice",
+   "stage": 4,
+   "kind": "core",
+   "prereqIds": [
+    "mobile",
+    "power"
+   ],
+   "relatedIds": [
+    "safety"
+   ],
+   "description": "站型选择、天馈安装、上站流程、告警处理与例行维护。基站岗的核心动作集。",
+   "outcome": "完成一次模拟上站：按流程拍照记录、核对天馈参数、处理 3 类常见告警。",
+   "caution": "忽视安全与工单规范，现场容易被退回。",
+   "sourceIds": [
+    "course",
+    "huawei"
+   ]
+  },
+  {
+   "id": "optim",
+   "name": "无线网络优化与测试",
+   "branch": "practice",
+   "stage": 4,
+   "kind": "core",
+   "prereqIds": [
+    "mobile",
+    "wireshark"
+   ],
+   "relatedIds": [
+    "python",
+    "em"
+   ],
+   "description": "路测与定点测试、RSRP/SINR 判读、覆盖与干扰问题定位、参数调整与复测。网优岗的日常闭环。",
+   "outcome": "用测试软件跑一段路线，输出问题小区清单与 3 条可执行优化建议，并复测验证。",
+   "caution": "只会看指标不会归因，报告写成数据堆砌。",
+   "sourceIds": [
+    "course",
+    "tgpp"
+   ]
+  },
+  {
+   "id": "otn",
+   "name": "PTN/OTN 传输设备调试",
+   "branch": "practice",
+   "stage": 4,
+   "kind": "core",
+   "prereqIds": [
+    "optical"
+   ],
+   "relatedIds": [
+    "routing"
+   ],
+   "description": "传输网元开局、业务配置、环网保护、告警与性能管理。传输机房岗位的必修。",
+   "outcome": "在仿真或实训设备上开通一条以太网专线业务，并验证保护倒换。",
+   "caution": "配置跳步漏掉时隙，业务不通却查不到原因。",
+   "sourceIds": [
+    "course",
+    "huawei"
+   ]
+  },
+  {
+   "id": "hcia",
+   "name": "华为 HCIA 认证（Datacom 或 5G）",
+   "branch": "capstone",
+   "stage": 4,
+   "kind": "milestone",
+   "prereqIds": [
+    "routing",
+    "mobile"
+   ],
+   "relatedIds": [],
+   "description": "把课堂知识压缩成一张行业认可的凭证。Datacom 偏网络与运维，5G 偏无线与基站，按目标岗位二选一。",
+   "outcome": "通过 HCIA 考试并保存成绩单；整理一份 30 页以内的备考笔记。",
+   "caution": "只刷题库不理解配置逻辑，面试现场配置就露馅。",
+   "sourceIds": [
+    "huawei",
+    "ict"
+   ]
+  },
+  {
+   "id": "intern",
+   "name": "顶岗实习与岗位适应",
+   "branch": "career",
+   "stage": 4,
+   "kind": "core",
+   "prereqIds": [
+    "career",
+    "etiquette"
+   ],
+   "relatedIds": [
+    "psych"
+   ],
+   "description": "真实工单、真实客户、真实工期。把学校里的实验变成能交付的工作记录。",
+   "outcome": "完成至少 8 周实习，产出 10 条工单记录与 1 份实习复盘。",
+   "caution": "把实习当打卡，回来写不出任何具体做过的事。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "iot",
+   "name": "物联网与传感网",
+   "branch": "network",
+   "stage": 4,
+   "kind": "optional",
+   "prereqIds": [
+    "mcu",
+    "network"
+   ],
+   "relatedIds": [
+    "cloud"
+   ],
+   "description": "NB-IoT/LoRa、传感器接口、边缘采集与上云。通信与行业应用的交叉地带。",
+   "outcome": "做一个温湿度采集终端，通过 MQTT 上报到云平台并展示曲线。",
+   "caution": "只做演示不做稳定性，掉线重连逻辑缺失。",
+   "sourceIds": [
+    "course",
+    "py"
+   ]
+  },
+  {
+   "id": "cloud",
+   "name": "云网融合与数据中心",
+   "branch": "network",
+   "stage": 4,
+   "kind": "optional",
+   "prereqIds": [
+    "network"
+   ],
+   "relatedIds": [
+    "linux",
+    "sec"
+   ],
+   "description": "虚拟化、云主机与 VPC、专线与 SD-WAN、机房基础设施。政企项目的主流交付形态。",
+   "outcome": "在云上搭一套 VPC + 子网 + 安全组，打通到本地的一台设备。",
+   "caution": "只点控制台不理解路由与安全组顺序，通了不知道为什么通。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "capstone",
+   "name": "毕业综合项目：小型通信系统设计与交付",
+   "branch": "capstone",
+   "stage": 5,
+   "kind": "milestone",
+   "prereqIds": [
+    "survey",
+    "bts",
+    "optim"
+   ],
+   "relatedIds": [
+    "otn",
+    "iot",
+    "cloud",
+    "dsp",
+    "modulate",
+    "notes"
+   ],
+   "description": "把“勘察—设计—实施—测试—优化—文档”串成一条完整交付链，形成可展示的作品。这是整棵树唯一的收敛点。",
+   "outcome": "交付一套完整项目包：方案书、拓扑与图纸、配置/测试记录、问题与优化报告、3 分钟讲解视频。",
+   "caution": "只做局部实验就号称项目，缺少闭环与数据支撑。",
+   "sourceIds": [
+    "course",
+    "huawei"
+   ]
+  },
+  {
+   "id": "hcip",
+   "name": "进阶认证：HCIP 或 1+X 5G 基站建设与维护",
+   "branch": "capstone",
+   "stage": 5,
+   "kind": "optional",
+   "prereqIds": [
+    "hcia"
+   ],
+   "relatedIds": [],
+   "description": "在 HCIA 之上做深：多协议、故障排查、方案设计，或走 1+X 的基站建设与运维方向。",
+   "outcome": "通过一门进阶认证，或在对应实训考核中拿到优秀。",
+   "caution": "证书堆数量不做深，面试深挖一层就空。",
+   "sourceIds": [
+    "huawei",
+    "ict"
+   ]
+  },
+  {
+   "id": "resume",
+   "name": "简历·面试·作品集",
+   "branch": "career",
+   "stage": 5,
+   "kind": "core",
+   "prereqIds": [
+    "intern",
+    "career"
+   ],
+   "relatedIds": [
+    "etiquette",
+    "capstone"
+   ],
+   "description": "把课程、证书、项目、实习压成一页简历与一个作品集，按岗位 JD 做关键词对齐。",
+   "outcome": "产出一页简历 + 一个作品集链接，完成 3 次模拟面试并记录改进点。",
+   "caution": "简历写“熟悉”一堆技术却没有一个可验证证据。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "general",
+   "name": "通识学分与毕业资格",
+   "branch": "career",
+   "stage": 5,
+   "kind": "milestone",
+   "prereqIds": [
+    "ideo",
+    "military",
+    "pe2",
+    "psych",
+    "etiquette",
+    "eng2"
+   ],
+   "relatedIds": [],
+   "description": "思政、军事理论、体育、心理健康、社交礼仪、职业英语等通识模块的学分归集。技术再强，学分不齐也毕不了业。",
+   "outcome": "对照培养方案逐项打勾，确认无缺项、无重修未过。",
+   "caution": "临毕业才发现少一门选修或体测未达标。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
+   "id": "end",
+   "name": "毕业验收：能力—证据—岗位三方对齐",
+   "branch": "capstone",
+   "stage": 5,
+   "kind": "milestone",
+   "prereqIds": [
+    "capstone",
+    "hcip",
+    "resume",
+    "general"
+   ],
+   "relatedIds": [
+    "hcia"
+   ],
+   "description": "用一份材料同时回答三个问题：我会什么、我做过什么、我能胜任哪个岗位。",
+   "outcome": "提交《毕业能力档案》：项目包 + 证书 + 实习记录 + 简历，并完成一次 20 分钟答辩。",
+   "caution": "把“上完课”当成“具备能力”，缺少可验证证据。",
+   "sourceIds": [
+    "course",
+    "huawei"
+   ]
+  }
+ ],
+ "applicationEdges": [
+  {
+   "source": "notes",
+   "target": "capstone",
+   "relation": "development",
+   "reason": "周复盘习惯直接决定项目文档与问题记录的质量。"
+  },
+  {
+   "source": "safety",
+   "target": "bts",
+   "relation": "application",
+   "reason": "上站作业必须先具备安全规范与操作资质。"
+  },
+  {
+   "source": "hf",
+   "target": "bts",
+   "relation": "development",
+   "reason": "射频前端知识用于判断天馈与驻波类告警。"
+  },
+  {
+   "source": "em",
+   "target": "optim",
+   "relation": "application",
+   "reason": "天线方向图与传播损耗用于覆盖问题归因。"
+  },
+  {
+   "source": "dsp",
+   "target": "capstone",
+   "relation": "development",
+   "reason": "滤波与频谱分析支撑测试数据处理。"
+  },
+  {
+   "source": "python",
+   "target": "optim",
+   "relation": "application",
+   "reason": "脚本化处理路测数据并生成报告。"
+  },
+  {
+   "source": "sec",
+   "target": "cloud",
+   "relation": "development",
+   "reason": "访问控制与合规要求决定云网方案边界。"
+  },
+  {
+   "source": "otn",
+   "target": "capstone",
+   "relation": "application",
+   "reason": "传输业务开通作为综合项目的承载层。"
+  },
+  {
+   "source": "iot",
+   "target": "capstone",
+   "relation": "application",
+   "reason": "传感采集作为综合项目的应用侧扩展。"
+  },
+  {
+   "source": "cloud",
+   "target": "capstone",
+   "relation": "application",
+   "reason": "云网融合方案作为综合项目的上联部分。"
+  },
+  {
+   "source": "modulate",
+   "target": "capstone",
+   "relation": "application",
+   "reason": "调制方案选型用于综合项目的链路设计。"
+  }
+ ]
+}
