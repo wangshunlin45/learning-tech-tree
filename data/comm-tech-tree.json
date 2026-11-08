@@ -302,6 +302,25 @@
    ]
   },
   {
+   "id": "self_study",
+   "name": "晚自习与出勤纪律：把时间变成产能",
+   "branch": "career",
+   "stage": 0,
+   "kind": "core",
+   "prereqIds": [
+    "start"
+   ],
+   "relatedIds": [
+    "notes"
+   ],
+   "description": "通信 260304 的晚自习出勤不是形式：它是一天里唯一不被打断的整块时间。把它固定成“预习 20 分钟 + 做题/实验 60 分钟 + 复盘 10 分钟”的循环。",
+   "outcome": "连续 6 周出勤无缺，且每周晚自习产出可查的记录（题卡/实验记录/笔记）。",
+   "caution": "人在教室心在手机，出勤率满分但一章没学会。",
+   "sourceIds": [
+    "course"
+   ]
+  },
+  {
    "id": "math2",
    "name": "应用数学②：积分与微分方程入门",
    "branch": "foundation",
@@ -1066,6 +1085,12 @@
   }
  ],
  "applicationEdges": [
+  {
+   "source": "self_study",
+   "target": "capstone",
+   "relation": "development",
+   "reason": "每周固定的自习节奏，是项目文档与测试记录能按时产出的真正来源。"
+  },
   {
    "source": "notes",
    "target": "capstone",
